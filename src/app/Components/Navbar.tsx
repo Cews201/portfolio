@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <div className='fixed-top-0 w-full h-full flex'>
+    <div className='fixed-top-0 w-full h-full flex justify-end pt-3 '>
         <div className='flex flex-row gap-3 items-center'>
           <div className='flex flex-row'>
             <div className='relative'>
@@ -26,7 +26,7 @@ const Navbar = () => {
 
         </div>
 
-        <div className='flex flex-row'>
+        <div className='flex gap-3 justify-items-end'>
           {SocialMedia.map((social) =>(
             <a className='fixed-top-0 w-full h-full flex' target='blank' href={social.href}>
               <Image
